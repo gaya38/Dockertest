@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+ jenkins:
+  image: jenkins:2.0
+  container_name: jenkins
+  ports:
+    - "8080:8080"
+
+ sonarr:
+  image: linuxserver/sonarr
+  container_name: sonarr
+  ports:
+    - "8989:8989"
+
